@@ -104,6 +104,45 @@
         font-size: 14px;
         color: #333;
         }
+        
+        /* Estilos de la zona de comentarios */
+        #comentarios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        #comentario {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #12c020;
+            font-size: 16px;
+        }
+        #comentario:focus {
+            outline: none;
+            border-color: #4caf50;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+        }
+        .btn-enviar {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(179, 31, 31);
+            background-color: #16be1c;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+        }
+        .btn-enviar:hover {
+            background-color: #cf0a0a;
+        }
+        .btn-enviar:active {
+            transform: scale(0.98);
+            background-color: #2e7d32;
+        }
     </style>
     <script>
         function enviarComentario() {
