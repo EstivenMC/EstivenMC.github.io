@@ -8,7 +8,7 @@
     
     <style>
         body {
-            font-family: "Abril Fatface", serif;
+            font-family: "Antonio", sans-serif;
             margin: 0;
             background-color: #f3f4f6;
         }
@@ -105,6 +105,13 @@
         color: #333;
         }
     </style>
+    <script>
+        function enviarComentario() {
+            const comentario = document.getElementById("comentario").value;
+            const correoDestino = "estivencabrera1235@gmail.com";
+            window.location.href = `mailto:${correoDestino}?subject=Comentario&body=${encodeURIComponent(comentario)}`;
+        }
+    </script>
 </head>
 <body>
 
@@ -198,14 +205,10 @@
 
         <section id="comentarios" class="section">
             <h2>Zona de comentarios</h2>
-            <input type="text" id="comentario" placeholder="Escribe un comentario">
-            <button onclick="guardarComentario()">Enviar</button>
-            
-            <div id="comentariosRealizados">
-                <h3>Últimos comentarios</h3>
-                <!-- Los comentarios se añadirán aquí -->
-            </div>
+            <input type="text" id="comentario"s placeholder="Escribe un comentario">
+            <button onclick="enviarComentario()">Enviar</button>
         </section>
+    </div>
 
         <footer>
             <div class="footer-links">
