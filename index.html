@@ -148,7 +148,7 @@
     <script>
         function enviarComentario() {
             const comentario = document.getElementById("comentario").value;
-            const correoDestino = "estivencabrera1235@gmail.com";
+            const correoDestino = "linuxmint667@gmail.com";
             
             // Enviar el correo usando mailto
             window.location.href = `mailto:${correoDestino}?subject=Comentario&body=${encodeURIComponent(comentario)}`;
@@ -251,6 +251,8 @@
 
         <section id="comentarios" class="section">
             <h2>Zona de comentarios</h2>
+            <p>Cualquier inquietud realiza tu comentario, nos ayudara a mejorar, gracias.</p>
+            
             <input type="text" id="comentario" placeholder="Escribe un comentario">
             <button onclick="enviarComentario()">Enviar</button>
         </section>
