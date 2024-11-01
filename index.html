@@ -151,6 +151,41 @@
         .footer-links a:hover {
             text-decoration: underline;
         }
+        .sites-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .site {
+            text-align: center;
+            margin: 0 10px;
+        }
+
+        .site img {
+            width: 80px;
+            height: 80px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .site img:hover {
+            transform: scale(1.1);
+        }
+
+        .site p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Estilos adicionales para el título de la sección */
+        #sitios h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #4CAF50;
+        }
     </style>
 
     <script>
@@ -208,14 +243,14 @@
                 <div class="sites-container">
                     <div class="site">
                         <a href="https://linuxmint-installation-guide.readthedocs.io/en/latest/" target="_blank">
-                            <img src="img/guia.png" alt="Logo de portada">
+                            <img src="img/guia.png" alt="Guía de instalación">
                         </a>
                         <p>Guía de instalación de Linux Mint</p>
                     </div>
                     
                     <div class="site">
                         <a href="https://linuxmint.com" target="_blank">
-                            <img src="img/mint.png" alt="Logo de portada">
+                            <img src="img/mint.png" alt="Página oficial">
                         </a>
                         <p>Página oficial de Linux Mint</p>
                     </div>
@@ -229,12 +264,12 @@
                     
                     <div class="site">
                         <a href="https://forums.linuxmint.com" target="_blank">
-                            <img src="img/foro.png" alt="Foro oficial de Linux Mint">
+                            <img src="img/foro.png" alt="Foro oficial">
                         </a>
                         <p>Foro oficial de Linux Mint</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <section id="razones" class="section">
             <h2>¿Por qué instalar este Sistema Operativo?</h2>
